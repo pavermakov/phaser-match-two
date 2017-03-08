@@ -1,6 +1,6 @@
 {
-  "name": "PhaserES6Webpack",
-  "version": "1.0.0",
+  "name": "phaser-match-two",
+  "version": "0.0.0",
   "description": "",
   "author": "leandro cabrera <leandcabrera@gmail.com>",
   "main": "index.js",

@@ -15,12 +15,8 @@ export default class extends Phaser.State {
     this.logo.anchor.setTo(0.5);
 
     // play button
-    this.play = this.add.button(this.CENTERX, this.CENTERY, 'play', this._nextState, this, 1, 0);
+    this.play = this.add.button(this.CENTERX, this.CENTERY + 50, 'play', this._nextState, this, 1, 0);
     this.play.anchor.setTo(0.5);
-
-    // sound button
-    this.sound = this.add.button(this.world.width - 15, this.world.height - 15, 'sound', null, this);
-    this.sound.anchor.setTo(1);
 
     // apply animations to the interface
     this._insertUI();

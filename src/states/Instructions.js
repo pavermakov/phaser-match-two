@@ -44,10 +44,6 @@ export default class extends Phaser.State {
       this.add.bitmapText(this.CENTERX, this.world.height - 100, 'minecraftia', 'CLICK TO PLAY', 20).anchor.setTo(0.5);
     }
 
-    // sound button
-    this.sound = this.add.button(this.world.width - 15, this.world.height - 15, 'sound', null, this);
-    this.sound.anchor.setTo(1);
-
     // reveal the stage
     this.camera.flash(0x000);
     this.camera.onFlashComplete.add(() => {

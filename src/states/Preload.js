@@ -28,6 +28,9 @@ export default class extends Phaser.State {
 
     this.load.bitmapFont('minecraftia', 'fonts/minecraftia.png', 'fonts/minecraftia.xml');
 
+    this.load.audio('flip', ['audio/flip.mp3', 'audio/flip.ogg']);
+    this.load.audio('match', ['audio/match.mp3', 'audio/match.ogg']);
+
     // по завершении загрузки ассетов, перейди в другой state
     this.load.onLoadComplete.add(() => {
       this.game.state.start('Menu');
